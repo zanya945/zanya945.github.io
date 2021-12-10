@@ -25,10 +25,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: install and build
-    - run: |
-        cd my-app
-        npm install
-        npm run build
+      run: |
+          cd my-app
+          npm install
+          npm run build
     - name: Commit files
       run: |
         cd ./my-app/dist
