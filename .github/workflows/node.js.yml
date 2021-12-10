@@ -31,7 +31,7 @@ jobs:
           npm run build
     - name: Commit files
       run: |
-        cd ./my-app/dist
+        cd dist
         git init
         git config --global user.email tea915656@gmail.com
         git config --global user.name zanya945
